@@ -104,18 +104,17 @@ h6 {
 }
 
 .wrapper {
-	// min-height: 100%;
-	// overflow: hidden;
-	// display: flex;
-	// flex-direction: column;
-	max-width: 1470px;
-	padding: 0 15px;
-	margin: 0 auto;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	// max-width: 1440px;
+	// margin: 0 auto;
 }
 
 .container {
-	max-width: 1200px;
-	// padding: 0 15px;
+	max-width: 1230px;
+	padding: 0 15px;
 	margin: 0 auto;
 }
 
@@ -134,4 +133,10 @@ a.btn {
 	justify-content: center;
 	text-align: center;
 	align-items: center;
+}
+
+svg {
+	display: block;
+	width: 0;
+	height: 0;
 }

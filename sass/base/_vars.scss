@@ -10,15 +10,14 @@ $text:18px;
 	align-items: $ai;
 }
 
-@mixin line {
+@mixin line($px) {
 	content: "";
 	position: absolute;
-	display: block;
-	width: 60px;
-	height: 5px;
-	margin: 0 auto;
-	margin-top: 10px;
-	margin-bottom: 35px;
+	bottom: $px;
+	left: 50%;
+	transform: translateX(-50%);
 	background: #E8C300;
 	border-radius: 50px;
+	width: 60px;
+	height: 5px;
 }
