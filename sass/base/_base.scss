@@ -140,3 +140,37 @@ svg {
 	width: 0;
 	height: 0;
 }
+
+section h2 {
+	font-family: 'Kurale', serif;
+	font-size: 42px;
+	line-height: 1.14;
+	text-transform: uppercase;
+	color: $black;
+}
+
+.desc {
+	font-size: 16px;
+	line-height: 1.75;
+	color: $black;
+
+	&>*:not(:first-child) {
+		margin: 0 auto;
+		max-width: 543px;
+	}
+
+	&>*:not(:last-child) {
+		margin-bottom: 26px;
+	}
+
+	&>*:first-child {
+		text-align: center;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 1.56;
+	}
+}
+
+.none {
+	display: none !important;
+}

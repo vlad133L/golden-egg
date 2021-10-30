@@ -1,0 +1,59 @@
+.team {
+	padding: 46px 0 126px;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.56) 100%), url('./../img/team.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 675px;
+}
+
+.team__chapter {
+	margin-bottom: 50px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.5em;
+	text-transform: uppercase;
+	color: $white;
+}
+
+.team__row {
+	@include flex(space-between, center);
+	color: $white;
+	flex-direction: row-reverse;
+}
+
+.team__text {
+	flex: 0 1 50%;
+}
+
+.team__title {
+	h2 {
+		color: $white;
+	}
+
+}
+
+.team__desc {
+	color: $white;
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.56;
+}
+
+
+
+.team__img {
+	position: relative;
+
+	&::after {
+		@include circle;
+		left: -115px;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		border-radius: 5px;
+	}
+}

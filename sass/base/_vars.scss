@@ -21,3 +21,16 @@ $text:18px;
 	width: 60px;
 	height: 5px;
 }
+
+@mixin circle {
+	content: "";
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	border: 20px solid #E8C300;
+	box-sizing: border-box;
+	filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+	border-radius: 125px;
+}
