@@ -34,7 +34,7 @@ aside {
 
 html,
 body {
-	background-color: #000;
+	background-color: #fff;
 	height: 100%;
 	width: 100%;
 	font-size: 100%;
@@ -44,9 +44,9 @@ body {
 	-webkit-text-size-adjust: 100%;
 	font-family: 'Lato', sans-serif;
 	font-weight: 40;
-	font-size: 20px;
-	overflow-x: hidden;
+	font-size: $text;
 	font-family: 'Open Sans', sans-serif;
+	color: $black;
 }
 
 input,
@@ -75,9 +75,8 @@ button::-moz-focus-inner {
 
 a,
 a:visited {
-	display: inline-block;
+	// display: inline-block;
 	text-decoration: none;
-	color: inherit;
 }
 
 a:hover {
@@ -104,16 +103,19 @@ h6 {
 	font-weight: inherit;
 }
 
-// .wrapper {
-// 	min-height: 100%;
-// 	overflow: hidden;
-// 	display: flex;
-// 	flex-direction: column;
-// }
+.wrapper {
+	// min-height: 100%;
+	// overflow: hidden;
+	// display: flex;
+	// flex-direction: column;
+	max-width: 1470px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
 
 .container {
-	max-width: 1400px;
-	padding: 0 15px;
+	max-width: 1200px;
+	// padding: 0 15px;
 	margin: 0 auto;
 }
 

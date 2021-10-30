@@ -1,1 +1,24 @@
-$color:yellow;
+$yellow:#E8C300;
+$white:#fff;
+$black:#000;
+$text:18px;
+
+@mixin flex($jc, $ai) {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: $jc;
+	align-items: $ai;
+}
+
+@mixin line {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 60px;
+	height: 5px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 35px;
+	background: #E8C300;
+	border-radius: 50px;
+}
