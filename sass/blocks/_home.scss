@@ -1,7 +1,6 @@
 .home {
 	min-height: 800px;
 	position: relative;
-	outline: 1px solid red;
 
 	&__img,
 	&__video {
@@ -66,8 +65,8 @@
 }
 
 .time-work {
-	margin-top: 120px;
-	margin-right: 60px;
+	margin-top: 60px;
+	width: 60px;
 	font-weight: 700;
 	font-size: 12px;
 	text-align: center;
@@ -120,7 +119,7 @@
 
 	&-name {
 		margin-bottom: 30px;
-		padding-bottom: 36px;
+		padding-bottom: 30px;
 		position: relative;
 
 		h1 {
@@ -131,15 +130,7 @@
 		}
 
 		&::after {
-			content: "";
-			position: absolute;
-			bottom: -36px;
-			left: 50%;
-			transform: translateX(-50%);
-			background: #E8C300;
-			border-radius: 50px;
-			width: 60px;
-			height: 5px;
+			@include line(-30px);
 		}
 	}
 }
@@ -175,6 +166,9 @@
 }
 
 .arrow__about {
+	display: inline-block;
+	margin: 0 auto;
+
 	svg {
 		width: 62px;
 		height: 62px;
