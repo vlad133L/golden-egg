@@ -1,0 +1,56 @@
+.spec {
+	padding: 46px 0 126px;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.56) 100%), url('./../img/specbg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 675px;
+}
+
+.spec__chapter {
+	margin-bottom: 50px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.5em;
+	text-transform: uppercase;
+	color: $white;
+}
+
+.spec__row {
+	@include flex(space-between, center);
+	color: $white;
+	flex-direction: row-reverse;
+}
+
+.spec__text {
+	flex: 0 1 50%;
+}
+
+.spec__title {
+	h2 {
+		color: $white;
+	}
+}
+
+.spec__desc {
+	color: $white;
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.56;
+}
+
+.spec__img {
+	position: relative;
+
+	&::after {
+		@include circle;
+		left: -115px;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		border-radius: 5px;
+	}
+}
